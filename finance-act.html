@@ -353,12 +353,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">All Members</h4>
+                                <h4 class="mb-sm-0 font-size-18">Finance Act</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Analytics</a></li>
-                                        <li class="breadcrumb-item active">All members</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                        <li class="breadcrumb-item active">Finance Act</li>
                                     </ol>
                                 </div>
 
@@ -369,128 +369,34 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
-
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                        <div class="d-flex align-items-center flex-grow-1">
-                                            <div class="btn-group pr-3" role="group" aria-label="Basic radio toggle button group">
-                                                <input type="radio" class="btn-check" name="msg-type-filter" value="" id="btn-allmsgs" autocomplete="off" checked="">
-                                                <label class="btn btn-primary mb-0 waves-light waves-effect" for="btn-allmsgs"><span class="d-inline">All</span></label>
-
-                                                <input type="radio" class="btn-check" value="SMS" name="msg-type-filter" id="btn-sms" autocomplete="off">
-                                                <label class="btn btn-primary mb-0 waves-light waves-effect" for="btn-sms"><i class="mdi mdi-account-multiple-check  font-size-16"></i><span class="pl-1 d-none d-lg-inline d-md-inline">Compliant</span></label>
-
-                                                <input type="radio" class="btn-check" value="Email" name="msg-type-filter" id="btn-email" autocomplete="off">
-                                                <label class="btn btn-primary mb-0 waves-light waves-effect" for="btn-email"><i class="mdi mdi-account-multiple-remove  font-size-16"></i><span class="pl-1 d-none d-lg-inline d-md-inline">With penalties</span></label>
-
-
-
-                                            </div>
-
-                                            <select class="form-control selectpicker w-auto" data-style="btn btn-secondary" data-live-search="true" title="Select the property">
-                                                <option value="" selected>All Members</option>
-                                                <option value="">Members with multiple trucks</option>
-                                                <option value="">Members with a single truck</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="d-flex">
-                                            <a href="members-new.html" type="button" class="btn btn-primary dropdown-toggle option-selector">
-                                                <i class="mdi  mdi-account-multiple-plus  font-size-16"></i> <span class="pl-1 d-md-inline">Add A Member</span>
-                                            </a>
-
-                                        </div>
-                                    </div>
-                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button" class="btn btn-secondary waves-effect btn-label waves-light me-3 write-msg-btn"><i class="mdi mdi-pencil align-middle me-2 label-icon"></i> Message Selected Member(s)</button>
-                                    </div>
-                                </div>
+                                
                                 <div class="card-body">
-                                    <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table" id="datatable-buttons">
+                                    <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="datatable-buttons">
                                         <thead class="table-dark">
                                             <tr>
-
-                                                <th scope="col" style="width:70px">
-                                                    <div class="the-mail-checkbox pr-4">
-                                                        <label for="selectAll" class="d-none">Select All</label>
-                                                        <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="selectAll">
-
-                                                    </div>
-                                                </th>
                                                 <th scope="col">#</th>
-                                                <th scope="col">Member</th>
-                                                <th scope="col">Contacts</th>
-                                                <th scope="col">Truck(s)</th>
-                                                <th scope="col">Active licenses</th>
-                                                <th scope="col" class="text-right">Monthly Payable</th>
-                                                <th scope="col" class="text-right">Reducing Bal.</th>
-                                                <th scope="col" class="text-right">Penalties</th>
+                                                <th scope="col">Section of The act</th>
+                                                <th scope="col">Nature of Offence</th>                                                
+                                                <th scope="col" class="text-right">Penalty</th>
+                                                
                                                 <th></th>
                                             </tr>
                                         </thead>
-                                        <tfoot class="table-dark">
-                                            <tr>
-                                                <td>
-
-                                                </td>
-                                                <td class="text-capitalize" colspan="3">22 Members</td>
-                                                <td>22 Trucks</td>
-                                                <td>12 licenses</td>
-                                                <td class="text-right text-uppercase">
-                                                    KES 23,000
-                                                </td>
-
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-danger fw-semibold">KES 19,000</span>
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
-                                                </td>
-                                                <td>
-
-                                                </td>
-                                            </tr>
-                                        </tfoot>
+                                        
                                         <tbody>
                                             <tr>
 
-                                                <td>
-                                                    <div class="d-flex  align-items-center">
-                                                        <div class="the-mail-checkbox pr-4">
-                                                            <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                        </div>
-
-                                                    </div>
-                                                </td>
+                                               
                                                 <td class="text-capitalize">1.</td>
                                                 <td class="text-capitalize">
-                                                    <a href="member-details.html" title="View Details">Kelvin Njuguna</a>
-                                                    <p class="mb-0 pb-0">
-                                                        <small>Member No. 1234568</small>
-                                                    </p>
+                                                    Section 36(1) and (3)
                                                 </td>
                                                 <td>
-                                                    <p class="text-muted mb-0">
-                                                        <a href="tell:0704549859">0704549859</a>
-                                                    </p>
-                                                    <p class="mb-0 pb-0">
-                                                        <a href="mailto:email@email.com">email@email.com</a>
-                                                    </p>
+                                                   Failing to carry and produce a driving license on demand.
                                                 </td>
-                                                <td class="text-capitalize">
-                                                    <a href="truck-details.html">KAD 678U</a>
-                                                </td>
-                                                <td>1</td>
-                                                <td class="text-right text-uppercase">
-                                                    KES 2,000
-                                                </td>
-
                                                 <td class="text-black text-uppercase text-right">
                                                     <span class="text-danger fw-semibold">KES 1,000</span>
                                                 </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
-                                                </td>
                                                 <td>
                                                     <div class="dropdown">
                                                         <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
@@ -507,45 +413,19 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            </tr>
+                                            </tr>   
                                             <tr>
 
-                                                <td>
-                                                    <div class="d-flex  align-items-center">
-                                                        <div class="the-mail-checkbox pr-4">
-                                                            <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                        </div>
-
-                                                    </div>
-                                                </td>
+                                               
                                                 <td class="text-capitalize">2.</td>
                                                 <td class="text-capitalize">
-                                                    <a href="member-details.html" title="View Details">Humphrey Luchetu</a>
-                                                    <p class="mb-0 pb-0">
-                                                        <small>Member No. 123</small>
-                                                    </p>
+                                                    Section 42(1) and 43(1)
                                                 </td>
                                                 <td>
-                                                    <p class="text-muted mb-0">
-                                                        <a href="tell:0704549859">0704549859</a>
-                                                    </p>
-                                                    <p class="mb-0 pb-0">
-                                                        <a href="mailto:email@email.com">email@email.com</a>
-                                                    </p>
-                                                </td>
-                                                <td class="text-capitalize">
-                                                    <a href="truck-details.html">KBC 567Y</a>
-                                                </td>
-                                                <td>1</td>
-                                                <td class="text-right text-uppercase">
-                                                    KES 2,000
-                                                </td>
-
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
+                                                   Exceeding speed limit prescribed for class of vehicle by 1-5 KPH
                                                 </td>
                                                 <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
+                                                    <span class="text-danger fw-semibold">KES 0.00</span>
                                                 </td>
                                                 <td>
                                                     <div class="dropdown">
@@ -565,43 +445,15 @@
                                                 </td>
                                             </tr>
                                             <tr>
-
-                                                <td>
-                                                    <div class="d-flex  align-items-center">
-                                                        <div class="the-mail-checkbox pr-4">
-                                                            <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                        </div>
-
-                                                    </div>
-                                                </td>
                                                 <td class="text-capitalize">3.</td>
                                                 <td class="text-capitalize">
-                                                    <a href="member-details.html" title="View Details">Cleophas Ndungu</a>
-                                                    <p class="mb-0 pb-0">
-                                                        <small>Member No. 1234568</small>
-                                                    </p>
+                                                    Section 42(1) and 43(1)
                                                 </td>
                                                 <td>
-                                                    <p class="text-muted mb-0">
-                                                        <a href="tell:0704549859">0704549859</a>
-                                                    </p>
-                                                    <p class="mb-0 pb-0">
-                                                        <a href="mailto:email@email.com">email@email.com</a>
-                                                    </p>
-                                                </td>
-                                                <td class="text-capitalize">
-                                                    <a href="">3 Trucks</a>
-                                                </td>
-                                                <td>3</td>
-                                                <td class="text-right text-uppercase">
-                                                    KES 6,000
-                                                </td>
-
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-danger fw-semibold">KES 4,000</span>
+                                                   Exceeding speed limit prescribed for class of vehicle by 6-10 KPH
                                                 </td>
                                                 <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
+                                                    <span class="text-danger fw-semibold">KES 500</span>
                                                 </td>
                                                 <td>
                                                     <div class="dropdown">
@@ -621,43 +473,15 @@
                                                 </td>
                                             </tr>
                                             <tr>
-
-                                                <td>
-                                                    <div class="d-flex  align-items-center">
-                                                        <div class="the-mail-checkbox pr-4">
-                                                            <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                        </div>
-
-                                                    </div>
-                                                </td>
                                                 <td class="text-capitalize">4.</td>
                                                 <td class="text-capitalize">
-                                                    <a href="member-details.html" title="View Details">Caleb Mumo</a>
-                                                    <p class="mb-0 pb-0">
-                                                        <small>Member No. 1234568</small>
-                                                    </p>
+                                                    Section 42(1) and 43(1)
                                                 </td>
                                                 <td>
-                                                    <p class="text-muted mb-0">
-                                                        <a href="tell:0704549859">0704549859</a>
-                                                    </p>
-                                                    <p class="mb-0 pb-0">
-                                                        <a href="mailto:email@email.com">email@email.com</a>
-                                                    </p>
-                                                </td>
-                                                <td class="text-capitalize">
-                                                    <a href="#">2 Trucks</a>
-                                                </td>
-                                                <td>1</td>
-                                                <td class="text-right text-uppercase">
-                                                    KES 2,000
-                                                </td>
-
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-danger fw-semibold">KES 200</span>
+                                                   Exceeding speed limit prescribed for class of vehicle by 11-15 KPH
                                                 </td>
                                                 <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
+                                                    <span class="text-danger fw-semibold">KES 3,000</span>
                                                 </td>
                                                 <td>
                                                     <div class="dropdown">
@@ -676,44 +500,17 @@
                                                     </div>
                                                 </td>
                                             </tr>
+
                                             <tr>
-
-                                                <td>
-                                                    <div class="d-flex  align-items-center">
-                                                        <div class="the-mail-checkbox pr-4">
-                                                            <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                        </div>
-
-                                                    </div>
-                                                </td>
                                                 <td class="text-capitalize">5.</td>
                                                 <td class="text-capitalize">
-                                                    <a href="member-details.html" title="View Details">Roney Ronny</a>
-                                                    <p class="mb-0 pb-0">
-                                                        <small>Member No. 1234568</small>
-                                                    </p>
+                                                    Section 42(1) and 43(1)
                                                 </td>
                                                 <td>
-                                                    <p class="text-muted mb-0">
-                                                        <a href="tell:0704549859">0704549859</a>
-                                                    </p>
-                                                    <p class="mb-0 pb-0">
-                                                        <a href="mailto:email@email.com">email@email.com</a>
-                                                    </p>
-                                                </td>
-                                                <td class="text-capitalize">
-                                                    <a href="truck-details.html">KAT 146Y</a>
-                                                </td>
-                                                <td>1</td>
-                                                <td class="text-right text-uppercase">
-                                                    KES 2,000
-                                                </td>
-
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
+                                                   Exceeding speed limit prescribed for class of vehicle by 16-20 KPH
                                                 </td>
                                                 <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
+                                                    <span class="text-danger fw-semibold">KES 10,000</span>
                                                 </td>
                                                 <td>
                                                     <div class="dropdown">
@@ -732,44 +529,19 @@
                                                     </div>
                                                 </td>
                                             </tr>
+                                            
                                             <tr>
 
-                                                <td>
-                                                    <div class="d-flex  align-items-center">
-                                                        <div class="the-mail-checkbox pr-4">
-                                                            <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                                <td class="text-capitalize">6.</td>
+                                               
+                                                <td class="text-capitalize">1.</td>
                                                 <td class="text-capitalize">
-                                                    <a href="member-details.html" title="View Details">Wekesa Wekesa</a>
-                                                    <p class="mb-0 pb-0">
-                                                        <small>Member No. 1234568</small>
-                                                    </p>
+                                                    Section 36(1) and (3)
                                                 </td>
                                                 <td>
-                                                    <p class="text-muted mb-0">
-                                                        <a href="tell:0704549859">0704549859</a>
-                                                    </p>
-                                                    <p class="mb-0 pb-0">
-                                                        <a href="mailto:email@email.com">email@email.com</a>
-                                                    </p>
-                                                </td>
-                                                <td class="text-capitalize">
-                                                    <a href="truck-details.html">KDD 676R</a>
-                                                </td>
-                                                <td>1</td>
-                                                <td class="text-right text-uppercase">
-                                                    KES 2,000
-                                                </td>
-
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-success fw-semibold">+ KES 6,300</span>
+                                                   Failing to carry and produce a driving license on demand.
                                                 </td>
                                                 <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
+                                                    <span class="text-danger fw-semibold">KES 1,000</span>
                                                 </td>
                                                 <td>
                                                     <div class="dropdown">
@@ -787,7 +559,127 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                            </tr>
+                                            </tr>   
+                                            <tr>
+
+                                               
+                                                <td class="text-capitalize">6.</td>
+                                                <td class="text-capitalize">
+                                                    Section 42(3),(4) and 43(1)
+                                                </td>
+                                                <td>
+                                                   Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 1-5 KPH
+                                                </td>
+                                                <td class="text-black text-uppercase text-right">
+                                                    <span class="text-danger fw-semibold">KES 0.00</span>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>   
+                                            <tr>
+
+                                               
+                                                <td class="text-capitalize">7.</td>
+                                                <td class="text-capitalize">
+                                                    Section 42(3),(4) and 43(1)
+                                                </td>
+                                                <td>
+                                                    Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 6-10 KPH
+                                                </td>
+                                                <td class="text-black text-uppercase text-right">
+                                                    <span class="text-danger fw-semibold">KES 500</span>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>   
+                                            <tr>
+
+                                               
+                                                <td class="text-capitalize">8.</td>
+                                                <td class="text-capitalize">
+                                                    Section 42(3),(4) and 43(1)
+                                                </td>
+                                                <td>
+                                                    Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 11-15 KPH
+                                                </td>
+                                                <td class="text-black text-uppercase text-right">
+                                                    <span class="text-danger fw-semibold">KES 3,000</span>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>   
+                                            <tr>
+
+                                               
+                                                <td class="text-capitalize">9.</td>
+                                                <td class="text-capitalize">
+                                                    Section 42(3),(4) and 43(1)
+                                                </td>
+                                                <td>
+                                                    Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 16-20 KPH
+                                                </td>
+                                                <td class="text-black text-uppercase text-right">
+                                                    <span class="text-danger fw-semibold">KES 10,000</span>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>                                          
 
                                         </tbody>
                                     </table>
