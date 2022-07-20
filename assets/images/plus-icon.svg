@@ -4,12 +4,17 @@
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#006220;}
+	.st2{fill:#4CBF6E;}
 </style>
 <g>
-	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="7.4102" y1="256" x2="504.0112" y2="256">
-		<stop  offset="0" style="stop-color:#5865B9"/>
-		<stop  offset="1" style="stop-color:#1C91E2"/>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="50.3155" y1="139.4155" x2="461.9402" y2="377.067" gradientTransform="matrix(1 0 0 -1 0 514)">
+		<stop  offset="2.770450e-07" style="stop-color:#006220"/>
+		<stop  offset="1" style="stop-color:#4CBF6E"/>
 	</linearGradient>
-	<path class="st0" d="M302.87,0v209.8h201.14v90.47H302.87V512h-94.32V300.27H7.41V209.8h201.14V0H302.87z"/>
+	<path class="st0" d="M302.9,0v209.8H504v90.5H302.9V512h-94.3V300.3H7.4v-90.5h201.1V0H302.9z"/>
+	<rect x="-488" y="-10" class="st1" width="98" height="83"/>
+	<rect x="-488" y="131.5" class="st2" width="98" height="83"/>
 </g>
 </svg>
