@@ -278,7 +278,7 @@
                                 <i class="dripicons-flag"></i><span>Flagged Payments</span>
                             </a>
                         </li>
-                       <li>
+                        <li>
                             <a href="finance-act.html" class="waves-effect">
                                 <i class="mdi mdi-currency-usd"></i><span>Finance act</span>
                             </a>
@@ -296,15 +296,14 @@
                             </ul>
                         </li>
 
-                        <li class="d-none">
+                       <li class="">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="bx bx-receipt"></i>
-                                <span>Invoices</span>
+                                <span>Bills</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="invoice-new.html">Create an Invoice</a></li>
-                                <li><a href="invoice.html">Permit & Maintenance invoices</a></li>
-                                <li><a href="invoice-other.html">Other Invoices</a></li>
+                                <li><a href="bills-raised.html">Bills raised</a></li>
+                                <li><a href="bills-receipted.html">Receipted Bills</a></li>                               
 
                             </ul>
                         </li>
@@ -323,11 +322,11 @@
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="bx bx-slider"></i>
-                                <span>Settings & Preferences</span>
+                                <span>Settings & Setups</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="charges.html">Charges</a></li>
-
+                                <li><a href="finance-act.html">Finance atc</a></li>
+                                <li><a href="set-roads.html">Roads</a></li>
                             </ul>
                         </li>
 
@@ -337,6 +336,53 @@
             </div>
         </div>
         <!-- Left Sidebar End -->
+
+         <!-- Offender email address -->
+         <div class="modal fade " id="subscribeModal" data-bs-backdrop="static " data-bs-keyboard="false " tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content ">
+                    <div class="modal-header border-bottom-0 ">
+                        <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="text-center mb-4 ">
+                            <div class="avatar-md mx-auto mb-4 ">
+                                <div class="avatar-title bg-light rounded-circle text-primary h1 ">
+                                    <i class="mdi mdi-card-account-details-outline "></i>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center ">
+                                <div class="col-xl-10 ">
+                                    <h4 class="text-primary ">Offender's ID num</h4>
+                                    <p class="text-muted font-size-14 mb-4 ">
+                                        Enter the offender's ID Number to continue.
+                                    </p>
+
+                                    <form>
+                                        <div class="row ">
+                                            <div class="col-12 ">
+                                                <div class="mb-3 ">
+                                                    <label for="digit1-input " class="visually-hidden ">ID Number</label>
+                                                    <input type="text " class="form-control form-control-lg text-center two-step " placeholder="ID / PPT No. ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-block w-100 ">
+                                                <i class="bx bx-search-alt-2 font-size-16 align-middle me-2 "></i>
+                                            Search
+                                        </button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Offender's email address -->
+
 
 
 
@@ -352,13 +398,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18 text-capitalize">New Invoice</h4>
+                                <h4 class="mb-sm-0 font-size-18 text-capitalize">New Traffic Offence Bill</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="invoice-unpaid.html">Invoices</a></li>
-                                        <li class="breadcrumb-item active">Create Invoice</li>
+                                        <li class="breadcrumb-item active">New Bill</li>
                                     </ol>
                                 </div>
 
@@ -371,132 +416,111 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="card p-5">
+                            <div class="card bill-creater-module">
                                 <div class="card-body ">
-                                    <div class="row d-flex align-items-center justify-content-center ">
-                                        <div class="col-sm-12 col-md-7 col-lg-6">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4 col-lg-5">
                                             <div class="d-flex justify-items-center align-items-center">
-                                                <div class="card-body border-1 invoice-form p-5">
+                                                <div class="card-body border-1 invoice-form p-4">
                                                     <h4 class="card-title mb-4">Enter the invoice details beow</h4>
 
                                                     <form>
                                                         <div class="row">
-                                                            <div class=" col-12 ">
-                                                                <div class="mb-4 ">
-                                                                    <label class="text-capitalize ">Whose is this invoice for?</label>
-                                                                    <div class="row ">
-                                                                        <div class="col-auto ">
-                                                                            <div class="form-check mb-3">
-                                                                                <input class="form-check-input" value="tenant" type="radio" name="invoice-for" id="tenant-invoice" checked>
-                                                                                <label class="form-check-label" for="tenant-invoice">
-                                                                                    A Member
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-auto ">
-                                                                            <div class="form-check mb-3">
-                                                                                <input class="form-check-input" value="other" type="radio" name="invoice-for" id="invoice-other">
-                                                                                <label class="form-check-label" for="invoice-other">
-                                                                                    Other
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-
-
+                                                            <div class="col-4 mb-4">
+                                                                <div class="d-flex">
+                                                                    <div class="flex-shrink-0 me-3 align-self-center">
+                                                                        <i class="mdi mdi-card-account-details-outline  h2 text-dark"></i>
                                                                     </div>
-
-
+                                                                    <div class="flex-grow-1">
+                                                                        <p class="text-muted mb-0">ID No.</p>
+                                                                        <h5 class="mb-0 font-14px">12345678</span></h5>
+                                                                    </div>
                                                                 </div>
+                                                            </div>
+                                                            <div class="col-8 mb-4">
+                                                                <div class="d-flex">
+                                                                    <div class="flex-shrink-0 me-3 align-self-center">
+                                                                        <i class="mdi mdi-account  h2 text-dark"></i>
+                                                                    </div>
+                                                                    <div class="flex-grow-1">
+                                                                        <p class="text-muted mb-0">Offender's Full Name</p>
+                                                                        <h5 class="mb-0 font-14px">Kelvin Njuguna Ndungu</span></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-4 mb-4">
+                                                                <div class="d-flex">
+                                                                    <div class="flex-shrink-0 me-3 align-self-center">
+                                                                        <i class="mdi mdi-phone  h2 text-dark"></i>
+                                                                    </div>
+                                                                    <div class="flex-grow-1">
+                                                                        <p class="text-muted mb-0">Phone No.</p>
+                                                                        <h5 class="mb-0 font-14px text-uppercase">0704549859</span></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-8 mb-4">
+                                                                <div class="d-flex">
+                                                                    <div class="flex-shrink-0 me-3 align-self-center">
+                                                                        <i class="mdi mdi-email-outline  h2 text-dark"></i>
+                                                                    </div>
+                                                                    <div class="flex-grow-1">
+                                                                        <p class="text-muted mb-0">Email Address</p>
+                                                                        <h5 class="mb-0 font-14px">Kelvinnjuguna99@gmail.com</span></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <hr/>
                                                             </div>
                                                         </div>
 
 
                                                         <div class="row tenant-invoice-container invoice-options">
-                                                            <div class="col-12">
+                                                            
+
+                                                            <div class="col-md-6">
+                                                                <div class="mb-3 text-capitalize">
+                                                                    <label for="formrow-email-input" class="form-label">Road</label>
+                                                                    <input type="text" class="form-control" id="formrow-email-input"  placeholder="Enter road where offence took place">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
                                                                 <div class="mb-3">
-                                                                    <label for="formrow-firstname-input" class="form-label">Member</label>
-                                                                    <select class="form-control selectpicker bg-white" title="Select the Member" data-live-search="true" title="Select a tenant">
-                                                                        <option value=" ">Kelvin Njuguna</option>
-                                                                        <option value=" ">Alex wanjala</option>
-                                                                        <option value=" ">Makori</option>
+                                                                    <label for="formrow-email-input" class="form-label">Vehicle Involved</label>
+                                                                    <input type="text" class="form-control" id="formrow-email-input"  placeholder="Enter plate Number">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-8">
+                                                                <div class="mb-3">
+                                                                    <label for="formrow-firstname-input" class="form-label">Traffic offence commited</label>
+                                                                    <select class="form-control selectpicker bg-white" title="Select Traffic offence" data-live-search="true" title="Select a tenant">
+                                                                        <option value=" ">Failing to carry and produce a driving license on demand.</option>
+                                                                        <option value=" ">Exceeding speed limit prescribed for class of vehicle by 1-5 KPH</option>
+                                                                        <option value=" ">Exceeding speed limit prescribed for class of vehicle by 6-10 KPH</option>
+                                                                        <option value=" ">Exceeding speed limit prescribed for class of vehicle by 11-15 KPH</option>
+                                                                        <option value=" ">Exceeding speed limit prescribed for class of vehicle by 16-20 KPH</option>
                                                                   </select>
                                                                 </div>
                                                             </div>
+                                                            <div class="col-md-4">
+                                                                <div class="mb-3">
+                                                                    <label for="formrow-email-input" class="form-label">Amount</label>
+                                                                    <input type="text" class="form-control" id="formrow-email-input" value="3,000" placeholder="Bill Item amount" readonly>
+                                                                </div>
+                                                            </div>
 
-                                                            <div class="col-md-6">
-                                                                <div class="mb-3">
-                                                                    <label for="formrow-email-input" class="form-label">Member's Email</label>
-                                                                    <input type="email" class="form-control" id="formrow-email-input" placeholder="Waiting..." readonly>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="mb-3">
-                                                                    <label for="formrow-password-input" class="form-label">Member's Phone</label>
-                                                                    <input type="text" class="form-control" id="formrow-password-input" placeholder="Waiting..." readonly>
-                                                                </div>
-                                                            </div>
+                                                            
                                                         </div>
-
-                                                        <div class="row others-invoice-container invoice-options d-none">
-                                                            <div class="col-12">
-                                                                <div class="mb-3">
-                                                                    <label for="formrow-firstname-input" class="form-label">Full Names</label>
-                                                                    <input class="form-control" placeholder="Enter the full Names">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-6">
-                                                                <div class="mb-3">
-                                                                    <label for="formrow-email-input" class="form-label">Email address</label>
-                                                                    <input type="email" class="form-control" id="formrow-email-input" placeholder="Enter the email address">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="mb-3">
-                                                                    <label for="formrow-password-input" class="form-label">Phone number</label>
-                                                                    <input type="text" class="form-control" id="formrow-password-input" placeholder="Enter the phone number">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
                                                         <div class="mb-3">
-                                                            <label for="formrow-firstname-input" class="form-label">Invoice title</label>
-                                                            <select class="form-control selectpicker bg-white" title="Select tenant" data-live-search="true" title="Select the invoice type">
-                                                                <option value=" ">Damage of property</option>
-                                                                <option value=" ">Penalty</option>
-                                                                <option value=" ">Others</option>
-                                                          </select>
+                                                            <label for="formrow-firstname-input" class="form-label">Details</label>
+                                                            <textarea name="" id="" cols="30" rows="3" placeholder="More details on the incident" class="form-control"></textarea>
                                                         </div>
-
-                                                        <div class="mb-3">
-                                                            <label for="formrow-firstname-input" class="form-label">Description</label>
-                                                            <textarea name="" id="" cols="30" rows="5" placeholder="Enter description" class="form-control"></textarea>
-                                                        </div>
-
-
-
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="mb-3">
-                                                                    <label for="formrow-inputCity" class="form-label">Due Date</label>
-                                                                    <div class="input-group" id="datepicker2">
-                                                                        <input type="text" class="form-control" placeholder="To be paid By" data-date-format="dd M, yyyy" data-date-container='#datepicker2' data-provide="datepicker" data-date-autoclose="true">
-
-                                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="mb-3">
-                                                                    <label for="formrow-password-input" class="form-label">Invoice amount</label>
-                                                                    <input type="text" class="form-control" id="formrow-password-input" placeholder="KES">
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-
+                                                        
                                                         <div class="mb-3 d-none">
 
                                                             <div class="form-check">
@@ -507,9 +531,79 @@
                                                             </div>
                                                         </div>
                                                         <div>
-                                                            <button type="submit" class="btn btn-primary w-md">Submit</button>
+                                                            <button type="button" class="btn btn-primary waves-effect btn-label waves-light"><i class="bx bx-plus label-icon"></i> Bill this Offence</button>
                                                         </div>
                                                     </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-8 col-lg-7">
+                                            <div class="d-flex justify-items-center align-items-center ">
+                                                <div class="card-body border-1 invoice-table p-4">
+                                                    <h4 class="card-title mb-4">Created Bill Details</h4>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="table-responsive border-1">
+                                                                <table class="table table-nowrap vertical-align-middle table-sm">
+                                                                    <thead class="bg-light">
+                                                                        <tr>
+                                                                            <th style="width: 70px;">No.</th>
+                                                                            <th>Offense</th>
+                                                                            <th class="text-end">Amount</th>
+                                                                            <th class="" style="width: 150px;"></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tfoot class="bg-light">
+                                                                        <tr>
+                                                                            <td colspan="2" class="border-0 text-end text-right">
+                                                                                <strong>Total</strong>
+                                                                            </td>
+                                                                            <td class="border-0 text-end">
+                                                                                <h5 class="m-0 text-uppercase fw-bold">KES 11,250</h5>
+                                                                            </td>
+                                                                            <td>
+                                                                                
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tfoot>
+                                                                    <tbody>
+                                                                        <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                                            <td>01</td>
+                                                                            <td>
+                                                                                <p class="the-bill-item mb-0 p-0 m-0">Driving Without identification plates affixed or plates not fixed in the prescribed manner</p>
+                                                                            </td>
+                                                                            <td class="text-end">KES 24,500</td>
+                                                                            <td class="text-right">
+                                                                                <button title="Edit Item" type="button" class="btn btn-link waves-effect"><i class="mdi mdi-pencil font-size-16 align-middle me-2"></i></button>
+                                                                                <button  title="View Item" type="button" class="btn btn-link waves-effect"><i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i></button>
+                                                                                <button title="Remove Item" type="button" class="btn btn-link waves-effect text-danger"><i class="mdi mdi-close font-size-16 align-middle me-2"></i></button>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr title="Drving a vehicle without a valid inspection certificate inspected">
+                                                                            <td>02</td>
+                                                                            <td>
+                                                                                <p class="the-bill-item mb-0 p-0 m-0">Drving a vehicle without a valid inspection certificate inspected</p>
+
+                                                                            </td>
+                                                                            <td class="text-end">KES 24,500</td>
+                                                                            <td class="text-right">
+                                                                                <button title="Edit Item" type="button" class="btn btn-link waves-effect"><i class="mdi mdi-pencil font-size-16 align-middle me-2"></i></button>
+                                                                                <button  title="View Item" type="button" class="btn btn-link waves-effect"><i class="mdi mdi-eye-outline font-size-16 align-middle me-2"></i></button>
+                                                                                <button title="Remove Item" type="button" class="btn btn-link waves-effect text-danger"><i class="mdi mdi-close font-size-16 align-middle me-2"></i></button>
+                                                                            </td>
+                                                                        </tr>
+                            
+                            
+                            
+                                                                        
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn btn-success waves-effect btn-label waves-light"><i class="bx bx-plus label-icon"></i> Create Bill</button>
+
                                                 </div>
                                             </div>
                                         </div>

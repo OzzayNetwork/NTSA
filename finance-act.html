@@ -279,7 +279,7 @@
                                 <i class="dripicons-flag"></i><span>Flagged Payments</span>
                             </a>
                         </li>
-                       <li>
+                        <li>
                             <a href="finance-act.html" class="waves-effect">
                                 <i class="mdi mdi-currency-usd"></i><span>Finance act</span>
                             </a>
@@ -297,15 +297,14 @@
                             </ul>
                         </li>
 
-                        <li class="d-none">
+                       <li class="">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="bx bx-receipt"></i>
-                                <span>Invoices</span>
+                                <span>Bills</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="invoice-new.html">Create an Invoice</a></li>
-                                <li><a href="invoice.html">Permit & Maintenance invoices</a></li>
-                                <li><a href="invoice-other.html">Other Invoices</a></li>
+                                <li><a href="bills-raised.html">Bills raised</a></li>
+                                <li><a href="bills-receipted.html">Receipted Bills</a></li>                               
 
                             </ul>
                         </li>
@@ -324,11 +323,11 @@
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="bx bx-slider"></i>
-                                <span>Settings & Preferences</span>
+                                <span>Settings & Setups</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="charges.html">Charges</a></li>
-
+                                <li><a href="finance-act.html">Finance atc</a></li>
+                                <li><a href="set-roads.html">Roads</a></li>
                             </ul>
                         </li>
 
@@ -371,319 +370,321 @@
                             <div class="card">
                                 
                                 <div class="card-body">
-                                    <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="datatable-buttons">
-                                        <thead class="table-dark">
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Section of The act</th>
-                                                <th scope="col">Nature of Offence</th>                                                
-                                                <th scope="col" class="text-right">Penalty</th>
-                                                
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        
-                                        <tbody>
-                                            <tr>
-
-                                               
-                                                <td class="text-capitalize">1.</td>
-                                                <td class="text-capitalize">
-                                                    Section 36(1) and (3)
-                                                </td>
-                                                <td>
-                                                   Failing to carry and produce a driving license on demand.
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 1,000</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>   
-                                            <tr>
-
-                                               
-                                                <td class="text-capitalize">2.</td>
-                                                <td class="text-capitalize">
-                                                    Section 42(1) and 43(1)
-                                                </td>
-                                                <td>
-                                                   Exceeding speed limit prescribed for class of vehicle by 1-5 KPH
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-capitalize">3.</td>
-                                                <td class="text-capitalize">
-                                                    Section 42(1) and 43(1)
-                                                </td>
-                                                <td>
-                                                   Exceeding speed limit prescribed for class of vehicle by 6-10 KPH
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 500</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-capitalize">4.</td>
-                                                <td class="text-capitalize">
-                                                    Section 42(1) and 43(1)
-                                                </td>
-                                                <td>
-                                                   Exceeding speed limit prescribed for class of vehicle by 11-15 KPH
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 3,000</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="text-capitalize">5.</td>
-                                                <td class="text-capitalize">
-                                                    Section 42(1) and 43(1)
-                                                </td>
-                                                <td>
-                                                   Exceeding speed limit prescribed for class of vehicle by 16-20 KPH
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 10,000</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                    <div class="table-responsive">
+                                        <table class="table align-middle table-striped table-nowrap table-hover dt-responsive contacts-table" id="datatable-buttons">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Section of The act</th>
+                                                    <th scope="col">Nature of Offence</th>                                                
+                                                    <th scope="col" class="text-right">Penalty</th>
+                                                    
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
                                             
-                                             
-                                            <tr>
-
-                                               
-                                                <td class="text-capitalize">6.</td>
-                                                <td class="text-capitalize">
-                                                    Section 42(3),(4) and 43(1)
-                                                </td>
-                                                <td>
-                                                   Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 1-5 KPH
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 0.00</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                            <tbody>
+                                                <tr>
+    
+                                                   
+                                                    <td class="text-capitalize">1.</td>
+                                                    <td class="text-capitalize">
+                                                        Section 36(1) and (3)
+                                                    </td>
+                                                    <td>
+                                                       Failing to carry and produce a driving license on demand.
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">
+                                                        <span class="text-info fw-semibold">KES 1,000</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </td>
-                                            </tr>   
-                                            <tr>
-
-                                               
-                                                <td class="text-capitalize">7.</td>
-                                                <td class="text-capitalize">
-                                                    Section 42(3),(4) and 43(1)
-                                                </td>
-                                                <td>
-                                                    Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 6-10 KPH
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 500</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                    </td>
+                                                </tr>   
+                                                <tr>
+    
+                                                   
+                                                    <td class="text-capitalize">2.</td>
+                                                    <td class="text-capitalize">
+                                                        Section 42(1) and 43(1)
+                                                    </td>
+                                                    <td>
+                                                       Exceeding speed limit prescribed for class of vehicle by 1-5 KPH
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">
+                                                        <span class="text-info fw-semibold">KES 0.00</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </td>
-                                            </tr>   
-                                            <tr>
-
-                                               
-                                                <td class="text-capitalize">8.</td>
-                                                <td class="text-capitalize">
-                                                    Section 42(3),(4) and 43(1)
-                                                </td>
-                                                <td>
-                                                    Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 11-15 KPH
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 3,000</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">3.</td>
+                                                    <td class="text-capitalize">
+                                                        Section 42(1) and 43(1)
+                                                    </td>
+                                                    <td>
+                                                       Exceeding speed limit prescribed for class of vehicle by 6-10 KPH
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">
+                                                        <span class="text-info fw-semibold">KES 500</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </td>
-                                            </tr>   
-                                            <tr>
-
-                                               
-                                                <td class="text-capitalize">9.</td>
-                                                <td class="text-capitalize">
-                                                    Section 42(3),(4) and 43(1)
-                                                </td>
-                                                <td>
-                                                    Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 16-20 KPH
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 10,000</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize">4.</td>
+                                                    <td class="text-capitalize">
+                                                        Section 42(1) and 43(1)
+                                                    </td>
+                                                    <td>
+                                                       Exceeding speed limit prescribed for class of vehicle by 11-15 KPH
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">
+                                                        <span class="text-info fw-semibold">KES 3,000</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </td>
-                                            </tr>   
-                                            <tr>
-
-                                               
-                                                <td class="text-capitalize">10.</td>
-                                                <td class="text-capitalize">
-                                                    Section 45A(1) and (2)
-                                                </td>
-                                                <td>
-                                                   Driving on or through a pedestrian walkway.
-                                                </td>
-                                                <td class="text-black text-uppercase text-right">
-                                                    <span class="text-info fw-semibold">KES 5,000</span>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                            <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                            <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                            <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                            <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                    </td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td class="text-capitalize">5.</td>
+                                                    <td class="text-capitalize">
+                                                        Section 42(1) and 43(1)
+                                                    </td>
+                                                    <td>
+                                                       Exceeding speed limit prescribed for class of vehicle by 16-20 KPH
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">
+                                                        <span class="text-info fw-semibold">KES 10,000</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </td>
-                                            </tr>                                         
-
-                                        </tbody>
-                                    </table>
+                                                    </td>
+                                                </tr>
+                                                
+                                                 
+                                                <tr>
+    
+                                                   
+                                                    <td class="text-capitalize">6.</td>
+                                                    <td class="text-capitalize">
+                                                        Section 42(3),(4) and 43(1)
+                                                    </td>
+                                                    <td>
+                                                       Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 1-5 KPH
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">
+                                                        <span class="text-info fw-semibold">KES 0.00</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>   
+                                                <tr>
+    
+                                                   
+                                                    <td class="text-capitalize">7.</td>
+                                                    <td class="text-capitalize">
+                                                        Section 42(3),(4) and 43(1)
+                                                    </td>
+                                                    <td>
+                                                        Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 6-10 KPH
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">
+                                                        <span class="text-info fw-semibold">KES 500</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>   
+                                                <tr>
+    
+                                                   
+                                                    <td class="text-capitalize">8.</td>
+                                                    <td class="text-capitalize">
+                                                        Section 42(3),(4) and 43(1)
+                                                    </td>
+                                                    <td>
+                                                        Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 11-15 KPH
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">
+                                                        <span class="text-info fw-semibold">KES 3,000</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>   
+                                                <tr>
+    
+                                                   
+                                                    <td class="text-capitalize">9.</td>
+                                                    <td class="text-capitalize">
+                                                        Section 42(3),(4) and 43(1)
+                                                    </td>
+                                                    <td>
+                                                        Exceeding speed limit of 50 KPH or as prescribed by a traffic sign By 16-20 KPH
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">
+                                                        <span class="text-info fw-semibold">KES 10,000</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>   
+                                                <tr>
+    
+                                                   
+                                                    <td class="text-capitalize">10.</td>
+                                                    <td class="text-capitalize">
+                                                        Section 45A(1) and (2)
+                                                    </td>
+                                                    <td>
+                                                       Driving on or through a pedestrian walkway.
+                                                    </td>
+                                                    <td class="text-black text-uppercase text-right">
+                                                        <span class="text-info fw-semibold">KES 5,000</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+    
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
+                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
+                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>                                         
+    
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
