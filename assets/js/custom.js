@@ -614,9 +614,11 @@ $(window).on('load', function() {
     let name = month[d.getMonth()];
 
     const mwaka = new Date();
-    let huuMwaka = mwaka.getFullYear()
+    let huuMwaka = mwaka.getFullYear();
+    var dd = String(today.getDate()).padStart(2, '0');
 
     $(".this-month").text(name + " " + huuMwaka);
+    $('.today-date').text(name+" "+dd+" "+huuMwaka)
 
     
 

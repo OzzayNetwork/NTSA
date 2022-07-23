@@ -1222,3 +1222,7 @@ padding: 0px;
         width: auto;
         max-width: 23vw;
     }
+    .revenue-top .list-group-item{
+        padding-left: 0px;
+        padding-right: 0px;
+    }

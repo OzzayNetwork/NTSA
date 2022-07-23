@@ -247,14 +247,15 @@
                                 <i class="bx bx-home-circle"></i><span>Dashboard</span>
                             </a>
                         </li>
+                       
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi mdi-receipt"></i>
                                 <span>Payments & Receipting </span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="members.html">Members Register</a></li>
-                                <li><a href="members-new.html">Add a Member</a></li>
+                                <li><a href="receipts-new.html">Receive Payment</a></li>
+                                <li><a href="receipts.html">View Receipts</a></li>
                             </ul>
                         </li>
 
@@ -269,18 +270,6 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="bx bx-file"></i>
-                                <span>Reports</span>
-                            </a>
-                            <ul class="sub-menu text-capitalize" aria-expanded="false">
-                                <li><a href="trucks.html">Bills Raised</a></li>
-                                <li class="text-capitalize"><a href="trucks-new.html">Bills receipted</a></li>
-                                <li class="text-capitalize"><a href="trucks-new.html">Transactions</a></li>
-                            </ul>
-                        </li>
-
                         <li class="">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="bx bx-receipt"></i>
@@ -293,14 +282,16 @@
                             </ul>
                         </li>
                         
+
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-monitor-multiple"></i>
-                                <span>System Users</span>
+                                <i class="bx bx-file"></i>
+                                <span>Reports</span>
                             </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="user-userlist.html">System Users</a></li>
-                                <li><a href="user-registration.html">Add a system user</a></li>
+                            <ul class="sub-menu text-capitalize" aria-expanded="false">
+                                <li><a href="bills-raised.html">Bills Raised</a></li>
+                                <li class="text-capitalize"><a href="bills-receipted.html">Bills receipted</a></li>
+                                <li class="text-capitalize"><a href="reports-transactions.html">Transactions</a></li>
                             </ul>
                         </li>
 
@@ -314,6 +305,20 @@
                                 <li><a href="set-roads.html">Roads</a></li>
                             </ul>
                         </li>
+
+                       
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-monitor-multiple"></i>
+                                <span>System Users</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="user-userlist.html">System Users</a></li>
+                                <li><a href="user-registration.html">Add a system user</a></li>
+                            </ul>
+                        </li>
+
+                        
 
                     </ul>
                 </div>
@@ -354,72 +359,72 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-sm-12 col-md-3 pb-5 border-bottom pb-md-0">
+                                        <div class="col-sm-12 col-md-5 pb-5  pb-md-0">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <img src="assets/images/users/avatar-1.png" alt="your Logo" class="avatar-md rounded-circle img-thumbnail">
                                                 </div>
                                                 <div class="flex-grow-1 align-self-center">
                                                     <div class="text-muted">
-                                                        <p class="mb-2">Welcome Back</p>
-                                                        <h5 class="mb-1">Hotline Transporters Sacco</h5>
-                                                        <p class="mb-0"><small>Summary overview with filters for more personalized experience.</small></p>
+                                                        <p class="mb-2 d-none">Daily Quick Stats for NTSA</p>
+                                                        <h5 class="mb-1 today-date">22 Jul 2022</h5>
+                                                        <p class="mb-0 d-non pb-0"><small>Daily summary for NTSA Billing system for <strong>Today</strong></small></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-12 col-md-9 align-self-center text-capitalize">
+                                        <div class="col-sm-12 col-md-7 align-self-center text-capitalize">
                                             <div class="text-lg-left mt-4 mt-lg-0">
                                                 <div class="row">
-                                                    <div class="col-sm-6 col-md-3 col-lg-2 mb-5 mb-md-0">
+                                                    <div class="col-sm-6 col-md-4 col-lg-4 mb-5 mb-md-0">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
                                                                 <span class="avatar-title rounded-circle bg-info font-size-16">
-                                                                        <i class="mdi mdi-account-details-outline text-white"></i>
+                                                                        <i class="mdi mdi-receipt text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">registered Members</p>
+                                                            <p class="text-muted text-truncate mb-2">Created Bills</p>
                                                             <h5 class="mb-0">48</h5>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-6 col-md-3 col-lg-2 mb-5 mb-md-0">
+                                                    <div class="col-sm-6 col-md-4 col-lg-4 mb-5 mb-md-0">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
                                                                 <span class="avatar-title rounded-circle font-size-16">
-                                                                        <i class="mdi mdi mdi-truck-delivery-outline text-white"></i>
+                                                                        <i class="mdi mdi mdi-briefcase-check text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">All trucks</p>
+                                                            <p class="text-muted text-truncate mb-2">Receipted Bills</p>
                                                             <h5 class="mb-0">6,503</h5>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-3 col-lg-2 mb-5 mb-md-0">
+                                                    <div class="col-sm-12 col-md-4 col-lg-4 mb-5 mb-md-0">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
                                                                 <span class="avatar-title rounded-circle bg-pink font-size-16">
-                                                                        <i class="mdi mdi-steering text-white"></i>
+                                                                        <i class="mdi mdi-account-alert text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Registered Drivers</p>
+                                                            <p class="text-muted text-truncate mb-2">Total Offenders</p>
                                                             <h5 class="mb-0">180</h5>
 
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-3 col-lg-2 mb-5 mb-md-0">
+                                                    <div class="col-sm-12 col-md-3 col-lg-3 mb-5 mb-md-0 d-none">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
                                                                 <span class="avatar-title rounded-circle bg-whatsApp font-size-16">
                                                                         <i class="mdi mdi-sticker-check text-white"></i>
                                                                     </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Active Permits</p>
+                                                            <p class="text-muted text-truncate mb-2">Total Offences</p>
                                                             <h5 class="mb-0">5,236</h5>
 
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-sm-12 col-md-3 col-lg-2 mb-5 mb-md-0">
+                                                    <div class="col-sm-12 col-md-3 col-lg-2 mb-5 mb-md-0 d-none">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
                                                                 <span class="avatar-title rounded-circle bg-warning font-size-16">
@@ -431,7 +436,7 @@
 
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-3 col-lg-2 mb-5 mb-md-0">
+                                                    <div class="col-sm-12 col-md-3 col-lg-2 mb-5 mb-md-0 d-none">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
                                                                 <span class="avatar-title rounded-circle bg-danger font-size-16">
@@ -461,7 +466,7 @@
                                 <a href="blocked.html">
                                     <div class="card-body">
                                         <div class="d-flex flex-wrap align-items-start">
-                                            <h5 class="card-title mb-3 me-2">Outstanding Balances</h5>
+                                            <h5 class="card-title mb-3 me-2">Value for unpaid Bills</h5>
 
                                             <div class="dropdown ms-auto">
                                                 <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
@@ -480,9 +485,9 @@
 
                                         <div class="d-flex flex-wrap">
                                             <div>
-                                                <p class="text-muted mb-1">Monthly collections and Penalties</p>
+                                                <p class="text-muted mb-1">The total value of the unpaid Loans.</p>
                                                 <h4 class="mb-3 text-danger fw-bold">KES 10,512</h4>
-                                                <p class="text-danger mb-0"><span><i class="mdi mdi-account-alert me-1"></i>22 Members</span></p>
+                                                <p class="text-danger mb-0"><span><i class="bx bx-receipt me-1"></i>22 Bills</span></p>
                                             </div>
                                             <div class="ms-auto align-self-end">
                                                 <i class="mdi mdi-cash-remove display-4 text-light"></i>
@@ -500,12 +505,12 @@
                                             <div class="d-flex align-items-center mb-3">
                                                 <div class="avatar-xs-2 me-3">
                                                     <span class="avatar-title rounded-circle bg-warning bg-soft text-warning  font-size-18">
-                                                        <i class="mdi  mdi-account-multiple-plus h2 mb-0 pb-0 text-warning"></i>
+                                                        <i class="mdi mdi-cash-refund h2 mb-0 pb-0 text-warning"></i>
                                                     </span>
                                                 </div>
                                                 <div class="d-flex flex-column">
-                                                    <span>New Members</span>
-                                                    <div class="btn-group">
+                                                    <span>Collections Today</span>
+                                                    <div class="btn-group d-none">
                                                         <button class="btn btn-link dropdown-toggle btn-sm px-0 text-left pt-0 card-month-filter" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             Feb 2022 <i class="mdi mdi-chevron-down"></i>
                                                         </button>
@@ -522,7 +527,7 @@
                                                 </div>
                                             </div>
                                             <div class="text-muted mt-4">
-                                                <h4>23 <i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
+                                                <h4>KES 2,250 <i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
                                                 <div class="d-flex">
                                                     <span class="badge badge-soft-success font-size-12"> + 0.2% </span> <span class="ms-2 text-truncate">From previous period</span>
                                                 </div>
@@ -615,7 +620,7 @@
                         <div class="col-xl-6 px-sm-30px">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title mb-0">Member Collections</h4>
+                                    <h4 class="card-title mb-0">Bill Creation And Receipted Bills</h4>
                                     <small class="mb-3 text-muted">The last 12 Months</small>
 
                                     <div>
@@ -625,50 +630,110 @@
                             </div>
 
                         </div>
-                        <div class="col-xl-6">
+                        <div class="col-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="float-end">
-                                        <select class="form-select form-select-sm ms-2">
-                                            <option value="2022" selected>2022</option>
-                                            <option value="2021">2021</option>
-                                            <option value="2020">2020</option>
-                                            <option value="2019">2019</option>
-                                        </select>
+                                    <div class="clearfix">
+                                        <div class="float-end">
+                                            <div class="input-group input-group-sm">
+                                                <select class="form-select form-select-sm">
+                                                    <option value="JA" selected>Jan</option>
+                                                    <option value="DE">Dec</option>
+                                                    <option value="NO">Nov</option>
+                                                    <option value="OC">Oct</option>
+                                                </select>
+                                                <label class="input-group-text">Month</label>
+                                            </div>
+                                        </div>
+                                        <h4 class="card-title mb-4">Top Revenue Earners</h4>
                                     </div>
-                                    <h4 class="card-title mb-0">Member collections by Revenue type</h4>
-                                    <p class="mb-3">Summary of cash collections from the members</p>
-
-                                    <div class="row">
-
-                                        <div class="col-sm-8">
-                                            <div>
-                                                <div id="sent-bundles" class="apex-charts"></div>
+                                    
+                                    <!-- <div class="d-flex flex-wrap align-items-start">
+                                        <div class="me-2">
+                                            <h5 class="card-title mb-3">Top Visitors</h5>
+                                        </div>
+                                        <div class="dropdown ms-auto">
+                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                <i class="mdi mdi-dots-horizontal"></i>
+                                            </a>
+                                          
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
                                             </div>
                                         </div>
-
-                                        <div class="col-sm-4 align-self-center">
-                                            <div>
-                                                <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-primary"></i> Permits</p>
-                                                <h5>22,562 | <span class="text-muted font-size-14">23 Members</span></h5>
+                                    </div> -->
+                                    <div class="row text-center d-non">
+                                        <div class="col-6 d-none">
+                                            <div class="mt-3">
+                                                <p class="text-muted mb-1">Today</p>
+                                                <h5>1024</h5>
                                             </div>
-
-                                            <div class="mt-4 pt-2">
-                                                <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-pink"></i> Office Maintenance</p>
-                                                <h5>632,230 | <span class="text-muted font-size-14">75 Members</span></h5>
-                                            </div>
-
-                                            <div class="mt-4 pt-2">
-                                                <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-whatsApp"></i> Penalties</p>
-                                                <h5>35,659 | <span class="text-muted font-size-14">21 Members</span></h5>
-                                            </div>
-
-                                            <div class="mt-4 pt-2">
-                                                <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-dark"></i> TAK</p>
-                                                <h5>2,500 | <span class="text-muted font-size-14">23 Members</span></h5>
-                                            </div>
-
                                         </div>
+                                        
+                                        <div class="col-6 text-left">
+                                            <div class="mt-3">
+                                                <p class="text-muted mb-1">This Month</p>
+                                                <h5>KES 125,456 <span class="text-success font-size-13">0.2 % <i class="mdi mdi-arrow-up ms-1"></i></span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="revenue-top">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="py-2">
+                                                    <h5 class="font-size-12">Exceeding speed limit prescribed for class of vehicle by 11-15 KPH <span class="float-end">38%</span></h5>
+                                                    <div class="progress animated-progess progress-sm">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 38%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </li>    
+                                            <li class="list-group-item">
+                                                <div class="py-2">
+                                                    <h5 class="font-size-12">Driving on or through a pedestrian walkway. <span class="float-end">19%</span></h5>
+                                                    <div class="progress animated-progess progress-sm">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 19%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="py-2">
+                                                    <h5 class="font-size-12">Failing to carry and produce a driving license on demand. <span class="float-end">10.3%</span></h5>
+                                                    <div class="progress animated-progess progress-sm">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 10.3%" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </li>   
+                                            <li class="list-group-item">
+                                                <div class="py-2">
+                                                    <h5 class="font-size-12">	Driver of moto cyle carrying more than one pillion passenger<span class="float-end">5%</span></h5>
+                                                    <div class="progress animated-progess progress-sm">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </li>   
+                                            <li class="list-group-item">
+                                                <div class="py-2">
+                                                    <h5 class="font-size-12">	Driving a vehicle on footpath<span class="float-end">4.2%</span></h5>
+                                                    <div class="progress animated-progess progress-sm">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 4.2%" aria-valuenow="4.2" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </li>   
+                                            
+                                        </ul>
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-top">
+                                    <div class="text-center">
+                                        <a href="javascript: void(0);" class="btn btn-primary waves-effect waves-light"> View All</a>
                                     </div>
                                 </div>
                             </div>
