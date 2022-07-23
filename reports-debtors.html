@@ -302,7 +302,7 @@
                             <ul class="sub-menu text-capitalize" aria-expanded="false">
                                 <li><a href="reports-conty.html">Revenus By County</a></li>
                                 <li class=""><a href="reports-debtors.html">Debtors</a></li>
-                                <li class=""><a href="bills-receipted.html">Revenue sources</a></li>
+                                <li class=""><a href="reports-sources.html">Revenue sources</a></li>
                                 <li class="text-capitalize"><a href="reports-transactions.html">Transactions</a></li>
                             </ul>
                         </li>
@@ -353,13 +353,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Revenue Collection by counies</h4>
+                                <h4 class="mb-sm-0 font-size-18">Debtors</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Reports</a></li>
-                                        <li class="breadcrumb-item active">Revenue collection by county</li>
+                                        <li class="breadcrumb-item active">Debtors</li>
                                     </ol>
                                 </div>
 
@@ -374,11 +374,11 @@
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                         <h4 class="card-title text-capitalize mb-0 ">
-                                            Revenue Collection By County
+                                            report on Debtors
                                         </h4>
 
                                         <div class="d-flex">
-                                            <a href="bill-new.html" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
+                                            <a href="bill-new.html" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize d-none">
                                                 <i class="mdi mdi-plus-circle-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Create A Bill</span>
                                             </a>
 
@@ -386,8 +386,8 @@
 
 
                                     </div>
-                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
+                                    <div class="btn-toolbar p-3 align-items-center animated delete-tool-bar" role="toolbar">
+                                        <button type="button" class="btn btn-primary waves-effect btn-label waves-light me-3 d-flex text-nowrap text-capitalize"><i class="mdi mdi-chat-processing-outline label-icon"></i> Send Reminder to all debtors</button>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -397,12 +397,11 @@
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th>#</th>
-                                                    <th scope="col">County</th>
-                                                    <th>Traffic Offenders</th>
-                                                    <th scope="col">Bills Created</th>
-                                                    <th scope="col">Bills Receipted</th>
-                                                    <th scope="col" class="text-right">Bills Value</th>
-                                                    <th scope="col" class="text-right">Amount collected</th>
+                                                    <th scope="col">Full Names</th>
+                                                    <th>ID No.</th>
+                                                    <th scope="col">Pending Bills</th>
+                                                    <th scope="col">Offences</th>
+                                                    <th scope="col" class="text-right">Amount</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -410,150 +409,98 @@
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>1.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        Mombasa County
+                                                        Kim Wanjiru
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap">15</td>
+                                                    <td class="text-capitalize text-nowrap">123568996</td>
+                                                    <td class="text-capitalize text-nowrap">2</td>
+                                                    <td class="text-capitalize text-nowrap">3</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 150,000</td>
-                                                   
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Details</button>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <td class="text-capitalize text-nowrap text-right">
+                                                        <button class="btn btn-primary  btn-sm"><i class="mdi"></i>Send Reminder</button>
                                                     </td>
+                                                   
                                                 </tr>
+                                                
+
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>2.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        Nairobi County
+                                                        Edwin Amolo
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap">15</td>
+                                                    <td class="text-capitalize text-nowrap">123568996</td>
+                                                    <td class="text-capitalize text-nowrap">2</td>
+                                                    <td class="text-capitalize text-nowrap">3</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 150,000</td>
-                                                   
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Details</button>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <td class="text-capitalize text-nowrap text-right">
+                                                        <button class="btn btn-primary  btn-sm"><i class="mdi"></i>Send Reminder</button>
                                                     </td>
+                                                   
                                                 </tr>
+                                                
+
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>3.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        Kisumu County
+                                                        Brian Silole
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap">15</td>
+                                                    <td class="text-capitalize text-nowrap">123568996</td>
+                                                    <td class="text-capitalize text-nowrap">2</td>
+                                                    <td class="text-capitalize text-nowrap">3</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 150,000</td>
-                                                   
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Details</button>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <td class="text-capitalize text-nowrap text-right">
+                                                        <button class="btn btn-primary  btn-sm"><i class="mdi"></i>Send Reminder</button>
                                                     </td>
+                                                   
                                                 </tr>
+                                                
+
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>4.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        Nakuru County
+                                                        Kelvin Wanga
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap">15</td>
+                                                    <td class="text-capitalize text-nowrap">123568996</td>
+                                                    <td class="text-capitalize text-nowrap">2</td>
+                                                    <td class="text-capitalize text-nowrap">3</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 150,000</td>
-                                                   
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Details</button>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <td class="text-capitalize text-nowrap text-right">
+                                                        <button class="btn btn-primary  btn-sm"><i class="mdi"></i>Send Reminder</button>
                                                     </td>
+                                                   
                                                 </tr>
+                                                
+
                                                 <tr>
                                                     <td class="text-capitalize text-nowrap"><strong>5.</strong></td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        Uasin Gishu County
+                                                        Joy Otieno
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">22</td>
-                                                    <td class="text-capitalize text-nowrap">18</td>
-                                                    <td class="text-capitalize text-nowrap">15</td>
+                                                    <td class="text-capitalize text-nowrap">123568996</td>
+                                                    <td class="text-capitalize text-nowrap">2</td>
+                                                    <td class="text-capitalize text-nowrap">3</td>
                                                     <td class="text-capitalize text-nowrap text-right">KES 220,000</td>
-                                                    <td class="text-capitalize text-nowrap text-right">KES 150,000</td>
-                                                   
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Details</button>
-                                                            <div class="dropdown">
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Send Email Reminder</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send SMS Reminder</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <td class="text-capitalize text-nowrap text-right">
+                                                        <button class="btn btn-primary  btn-sm"><i class="mdi"></i>Send Reminder</button>
                                                     </td>
+                                                   
                                                 </tr>
+                                                
                                                 
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
 
                                                     <th colspan="2">
-                                                        23 Bills
+                                                        23 Debtors
                                                     </th>
                                                     
 
-                                                    <th class="text-nowrap" colspan="3">23 Offenders</th>
-
+                                                    
                                                     <td class="text-nowrap" colspan="">
                                                        
                                                     </td>
 
-                                                    <td class="text-nowrap text-right " colspan="">
+                                                    <td class="text-nowrap text-right " colspan="3">
                                                         <span class="fw-semibold ">KES 2,000,000</span>
                                                     </td>
                                                     <TD></TD>
@@ -589,7 +536,7 @@
                                 <div class="col-6">
                                     <address>
                                         <strong class="text-capitalize">Bill Prepared for:</strong><br>
-                                        Kelvin Njuguna AT Mombasa Road<br>
+                                        Kim Wanjiru AT Mombasa Road<br>
                                         email@mail.com, 0704 549 859<br>                                   
                                         ID No. 12345689. Car Plate No. KAB 123P <br/>
                                         <br>
@@ -686,7 +633,7 @@
                             <div class="col-12">
                                 <address>
                                     <strong>Billed To:</strong><br>
-                                    Kelvin Njuguna<br>
+                                    Kim Wanjiru<br>
                                     email@mail.com, 0704 549 859<br>                                   
                                     Hse No. 410, 90 Degrees By Tsavo
                                     <br><br>
