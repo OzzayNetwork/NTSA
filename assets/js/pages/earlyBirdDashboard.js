@@ -249,3 +249,74 @@ var options = {
     },
     chart = new ApexCharts(document.querySelector("#member-salary-chart"), options);
 chart.render();
+
+options = { chart: { height: 350, type: "bar", toolbar: { show: !1 } }, 
+plotOptions: { bar: { horizontal: !0 } }, dataLabels: { enabled: !1 }, 
+xaxis: {
+    labels: {
+        formatter: function(value) {
+            // return "KES " + value;
+            return numeral(value).format('0,0 a')
+        },
+        // formatter: function(val, index) {
+
+        //     return numeral(val).format('0,0')
+        // },
+
+
+
+    },
+},
+series: [{ 
+    name: "Collected Revenue",
+    data: [38203560, 43020356, 45203560, 42035675, 52035650, 52035684, 78203560, 112035600, 122035620, 132035665] 
+}],
+     colors: ["#34c38f"], grid: { borderColor: "#f1f1f1" }, xaxis: { 
+        categories: ["Nairobi", "Nakuru", "Uasin Gishu", "Baringo", "Mombasa", "Kisumu", "Meru", "Kirinyaga", "Machakos", "Kiambu"] },
+        tooltip: {
+            enabled: true,
+            enabledOnSeries: undefined,
+            shared: true,
+            followCursor: false,
+            intersect: false,
+            inverseOrder: false,
+            custom: undefined,
+            fillSeriesColor: false,
+            theme: false,
+            style: {
+                fontSize: '12px',
+                fontFamily: undefined
+
+            },
+            fillSeriesColor: false,
+            theme: "light",
+
+            marker: {
+                show: true,
+            },
+            onDatasetHover: {
+                highlightDataSeries: true,
+            },
+            // custom: function({ series, seriesIndex, dataPointIndex, w }) {
+            //     let currentTotal = 0
+            //     series.forEach((s) => {
+            //         currentTotal += s[dataPointIndex]
+            //     })
+            //     return '<div class="custom-tooltip">' +
+            //         '<span><b>Total: </b>' + currentTotal + '</span>' +
+            //         '</div>'
+            // },
+            y: {
+                formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
+                    let currentTotal = 0
+                    series.forEach((s) => {
+                        currentTotal += s[dataPointIndex]
+                    })
+                    return "<span class='text-right w-100 d-flex' > KES " + numeral(value).format('0,0') + "</span> "
+
+                }
+            },
+            
+        }
+     };
+(chart = new ApexCharts(document.querySelector("#bar_chart"), options)).render();
