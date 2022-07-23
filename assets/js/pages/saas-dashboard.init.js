@@ -28,12 +28,12 @@ var options = {
   chart = new ApexCharts(document.querySelector("#line-chart"), options);
 chart.render();
 options = {
-  series: [56, 38, 26],
+  series: [56,44],
   chart: {
     type: "donut",
     height: 262
   },
-  labels: ["Series A", "Series B", "Series C"],
+  labels: ["MPESA", "CASH"],
   colors: ["#556ee6", "#34c38f", "#f46a6a"],
   legend: {
     show: !1
