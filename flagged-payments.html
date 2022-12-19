@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>NTSA | Keep Our Roads safe</title>
+    <title>Muigai Commercials | Partially paid invoices</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Rental management system by Nouveta LTD" name="description" />
     <meta content="Kelvin Njuguna" name="author" />
@@ -119,6 +119,9 @@
                         </div>
                     </div>
 
+
+
+
                     <div class="dropdown d-none d-lg-inline-block ms-1">
                         <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
                                 <i class="bx bx-fullscreen"></i>
@@ -211,7 +214,6 @@
                     </div>
 
 
-
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
@@ -233,7 +235,7 @@
         </header>
 
         <!-- ========== Left Sidebar Start ========== -->
-      <div class="vertical-menu">
+        <div class="vertical-menu">
 
             <div data-simplebar class="h-100">
 
@@ -338,6 +340,7 @@
         <!-- Left Sidebar End -->
 
 
+
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
@@ -350,12 +353,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Receipted Bills</h4>
+                                <h4 class="mb-sm-0 font-size-18">Flagged payments</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Recepted Bills</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Action Center</a></li>
+                                        <li class="breadcrumb-item active">Flagged Payments</li>
                                     </ol>
                                 </div>
 
@@ -366,81 +370,53 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
-                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
-                                        <h4 class="card-title text-capitalize mb-0 ">
-                                            All receipts for March 2022
-                                        </h4>
-
-                                        <div class="d-flex">
-                                            <select class="form-control selectpicker w-auto  show-tick" data-style="btn btn-primary waves-light waves-effect month-picker" data-live-search="true" title="Select A month">
-                                                <option value="" selected>Mar 2022</option>
-                                                <option value="">Feb 2022</option>
-                                                <option value="">Jan 2022</option>
-                                                <option value="">Dec 2021</option>
-                                                <option value="">Nov 2021</option>
-                                                <option value="">Sep 2021</option>
-                                                <option value="">Oct 2021</option>
-                                          </select>
-
-
-                                        </div>
-
-
-                                    </div>
-                                    <div class="btn-toolbar p-3 align-items-center d-none animated delete-tool-bar" role="toolbar">
-                                        <button type="button" class="btn btn-primary waves-effect btn-label waves-light me-3"><i class="mdi mdi-printer label-icon"></i> Print Selected Invoices</button>
-                                    </div>
-                                </div>
                                 <div class="card-body">
-                                    <div class="table-responsive overflow-visible">
+                                    <div class="table-responsive">
 
-                                        <table class="table align-middle table-hover  contacts-table table-striped " id="datatable-buttons">
+                                        <table class="table align-middle table-hover  contacts-table table-striped table-nowrap " id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
 
-                                                    <th scope="col">NO.</th>
-                                                    <th scope="col">Offender</th>
-                                                    <th scope="col">Bill No.</th>
+                                                    <th scope="col">Paid By</th>
+                                                    <th scope="col">Method</th>
+                                                    <th scope="col">Tenant</th>
+                                                    <th scope="col">Hse/Unit</th>
                                                     <th scope="col">Date</th>
-                                                    <th scope="col" class="text-nowrap">Served By</th>
-                                                    <th scope="col" class="text-nowrap">Payment Method</th>
-                                                    <th scope="col" class="text-right text-nowrap">Amount</th>
+                                                    <th class="text-right">Amount Paid</th>
+                                                    <th class="text-right">Initial Balance</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-
-                                                    
-                                                    <td class="text-capitalize text-nowrap">MCA12358</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Kelvin Njuguna</a></p>
-                                                    </td>
-                                                    
+                                                    <td class="text-capitalize text-nowrap">Vivian Kasandra</td>
                                                     <td>
-                                                        <a href="#" class="fw-semibold">INV1234</a>
+                                                        <span class="badge badge-soft-success">MPESA</span> 0723425362
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Esther Wahome</a></p>
                                                     </td>
 
+                                                    <td>
+                                                        <a href="property-details.html">40 Degrees,Hse NO.410</a>
+                                                    </td>
                                                     <td class="text-capitalize text-nowrap ">
-                                                        01 Mar 2022, 10:23 AM
+                                                        18 Aug 2022 9:15 PM
                                                     </td>
 
-                                                    <td class="text-capitalize ">
-                                                        Stan Lee
-                                                    </td>
-                                                    <td class="text-capitalize ">
-                                                        <span class="text-uppercase  badge badge-soft-success">mpesa</span>
-                                                    </td>
+
                                                     <td class="text-nowrap text-right ">
                                                         <span class="fw-semibold ">KES 25,500</span>
                                                     </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 36,750</span>
+                                                    </td>
 
-                                                    <td>
+                                                    <td class="text-right">
                                                         <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Receipt</button>
-                                                            <div class="dropdown">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Distribute Balances</button>
+                                                            <div class="dropdown d-none">
                                                                 <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </a>
@@ -448,9 +424,8 @@
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
                                                                     <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Offender</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
                                                                     <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
 
                                                                 </div>
                                                             </div>
@@ -458,35 +433,33 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-
-                                                    
-                                                    <td class="text-capitalize text-nowrap">MCA12358</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Kelvin Njuguna</a></p>
-                                                    </td>
-                                                    
+                                                    <td class="text-capitalize text-nowrap">Sandra Wairimu</td>
                                                     <td>
-                                                        <a href="#" class="fw-semibold">INV1234</a>
+                                                        <span class="badge badge-soft-success">MPESA</span> 0704549822
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Amos Wanjala</a></p>
                                                     </td>
 
+                                                    <td>
+                                                        <a href="property-details.html">55 Degrees,Hse NO.411</a>
+                                                    </td>
                                                     <td class="text-capitalize text-nowrap ">
-                                                        01 Mar 2022, 10:23 AM
+                                                        03 Mar 2022 9:34 PM
                                                     </td>
 
-                                                    <td class="text-capitalize ">
-                                                        Stan Lee
-                                                    </td>
-                                                    <td class="text-capitalize ">
-                                                        <span class="text-uppercase  badge badge-soft-danger">Cash</span>
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 15,520</span>
                                                     </td>
                                                     <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 25,500</span>
+                                                        <span class="fw-semibold ">KES 22,721</span>
                                                     </td>
 
-                                                    <td>
+                                                    <td class="text-right">
                                                         <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Receipt</button>
-                                                            <div class="dropdown">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Distribute Balances</button>
+                                                            <div class="dropdown d-none">
                                                                 <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </a>
@@ -494,9 +467,8 @@
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
                                                                     <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Offender</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
                                                                     <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
 
                                                                 </div>
                                                             </div>
@@ -504,35 +476,33 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-
-                                                    
-                                                    <td class="text-capitalize text-nowrap">MCA12358</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Kelvin Njuguna</a></p>
-                                                    </td>
-                                                    
+                                                    <td class="text-capitalize text-nowrap">Patrick Kariuki</td>
                                                     <td>
-                                                        <a href="#" class="fw-semibold">INV1234</a>
+                                                        <span class="badge badge-soft-success">MPESA</span> 0712453536
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Kennedy Wafula</a></p>
                                                     </td>
 
+                                                    <td>
+                                                        <a href="property-details.html">60 Degrees,Hse NO.413</a>
+                                                    </td>
                                                     <td class="text-capitalize text-nowrap ">
-                                                        01 Mar 2022, 10:23 AM
+                                                        22 April 2019 8:45 PM
                                                     </td>
 
-                                                    <td class="text-capitalize ">
-                                                        Stan Lee
-                                                    </td>
-                                                    <td class="text-capitalize ">
-                                                        <span class="text-uppercase  badge badge-soft-success">mpesa</span>
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 22,360</span>
                                                     </td>
                                                     <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 25,500</span>
+                                                        <span class="fw-semibold ">KES 43,110</span>
                                                     </td>
 
-                                                    <td>
+                                                    <td class="text-right">
                                                         <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Receipt</button>
-                                                            <div class="dropdown">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Distribute Balances</button>
+                                                            <div class="dropdown d-none">
                                                                 <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </a>
@@ -540,9 +510,8 @@
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
                                                                     <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Offender</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
                                                                     <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
 
                                                                 </div>
                                                             </div>
@@ -550,35 +519,33 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-
-                                                    
-                                                    <td class="text-capitalize text-nowrap">MCA12358</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Kelvin Njuguna</a></p>
-                                                    </td>
-                                                    
+                                                    <td class="text-capitalize text-nowrap">Ann Wetangula</td>
                                                     <td>
-                                                        <a href="#" class="fw-semibold">INV1234</a>
+                                                        <span class="badge badge-soft-success">MPESA</span> 0723655367
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Lemmy Mureithi</a></p>
                                                     </td>
 
+                                                    <td>
+                                                        <a href="property-details.html">72 Degrees,Hse NO.411</a>
+                                                    </td>
                                                     <td class="text-capitalize text-nowrap ">
-                                                        01 Mar 2022, 10:23 AM
+                                                        08 Jan 2022 11:25 PM
                                                     </td>
 
-                                                    <td class="text-capitalize ">
-                                                        Stan Lee
-                                                    </td>
-                                                    <td class="text-capitalize ">
-                                                        <span class="text-uppercase  badge badge-soft-success">Bank</span>
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 15,870</span>
                                                     </td>
                                                     <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 25,500</span>
+                                                        <span class="fw-semibold ">KES 36,223</span>
                                                     </td>
 
-                                                    <td>
+                                                    <td class="text-right">
                                                         <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Receipt</button>
-                                                            <div class="dropdown">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Distribute Balances</button>
+                                                            <div class="dropdown d-none">
                                                                 <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </a>
@@ -586,9 +553,8 @@
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
                                                                     <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Offender</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
                                                                     <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
 
                                                                 </div>
                                                             </div>
@@ -596,35 +562,33 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-
-                                                    
-                                                    <td class="text-capitalize text-nowrap">MCA12358</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Kelvin Njuguna</a></p>
-                                                    </td>
-                                                    
+                                                    <td class="text-capitalize text-nowrap">Muhamed Ali</td>
                                                     <td>
-                                                        <a href="#" class="fw-semibold">INV1234</a>
+                                                        <span class="badge badge-soft-success">Bank</span> Co-operative Bank
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Unknown</a></p>
                                                     </td>
 
+                                                    <td>
+                                                        <a href="property-details.html">Unknown</a>
+                                                    </td>
                                                     <td class="text-capitalize text-nowrap ">
-                                                        01 Mar 2022, 10:23 AM
+                                                        12 Mar 2022 11:20 PM
                                                     </td>
 
-                                                    <td class="text-capitalize ">
-                                                        Stan Lee
-                                                    </td>
-                                                    <td class="text-capitalize ">
-                                                        <span class="text-uppercase  badge badge-soft-success">mpesa</span>
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 55,349</span>
                                                     </td>
                                                     <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 25,500</span>
+                                                        <span class="fw-semibold ">-</span>
                                                     </td>
 
-                                                    <td>
+                                                    <td class="text-right">
                                                         <div class="d-flex">
-                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">View Receipt</button>
-                                                            <div class="dropdown">
+                                                            <a type="button" href="action-payment-assignement.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">Assign to Units</a>
+                                                            <div class="dropdown d-none">
                                                                 <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                                     <i class="bx bx-dots-vertical-rounded"></i>
                                                                 </a>
@@ -632,31 +596,334 @@
                                                                 <div class="dropdown-menu dropdown-menu-end ">
                                                                     <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
                                                                     <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Offender</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
                                                                     <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
 
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">Joan Kimani</td>
+                                                    <td>
+                                                        <span class="badge badge-soft-success">MPESA</span> 0723655367
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Simon Ndungu</a></p>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="property-details.html">63 Degrees,Hse NO.412</a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap ">
+                                                        08 Jan 2022 11:25 PM
+                                                    </td>
+
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 15,870</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 40,880</span>
+                                                    </td>
+
+                                                    <td class="text-right">
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Distribute Balances</button>
+                                                            <div class="dropdown d-none">
+                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </a>
+
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">Janet Akinyi</td>
+                                                    <td>
+                                                        <span class="badge badge-soft-success">Bank</span> Co-operative Bank
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Unknown</a></p>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="property-details.html">Unknown</a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap ">
+                                                        1 May 2019 11:15PM
+                                                    </td>
+
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 55,000</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">-</span>
+                                                    </td>
+
+                                                    <td class="text-right">
+                                                        <div class="d-flex">
+                                                            <a type="button" href="action-payment-assignement.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">Assign to Units</a>
+                                                            <div class="dropdown d-none">
+                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </a>
+
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">Justus Kariuki</td>
+                                                    <td>
+                                                        <span class="badge badge-soft-success">MPESA</span> 0778278376
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Veronicah Adhiambo</a></p>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="property-details.html">78 Degrees,Hse NO.415</a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap ">
+                                                        08 Aug 2022 8:25 AM
+                                                    </td>
+
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 26,780</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 48,110</span>
+                                                    </td>
+
+                                                    <td class="text-right">
+                                                        <div class="d-flex">
+                                                            <button type="button" class="btn btn-success btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Distribute Balances</button>
+                                                            <div class="dropdown d-none">
+                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </a>
+
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">Paul Mwai</td>
+                                                    <td>
+                                                        <span class="badge badge-soft-success">Bank</span> Co-operative Bank
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Unknown</a></p>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="property-details.html">Unknown</a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap ">
+                                                        01 Mar 2022 9:53 PM
+                                                    </td>
+
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 78,000</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">-</span>
+                                                    </td>
+
+                                                    <td class="text-right">
+                                                        <div class="d-flex">
+                                                            <a type="button" href="action-payment-assignement.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">Assign to Units</a>
+                                                            <div class="dropdown d-none">
+                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </a>
+
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">Newtone Omemo</td>
+                                                    <td>
+                                                        <span class="badge badge-soft-success">Bank</span> Co-operative Bank
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Unknown</a></p>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="property-details.html">Unknown</a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap ">
+                                                        09 Feb 2021 10:11 PM
+                                                    </td>
+
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 67,900</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">-</span>
+                                                    </td>
+
+                                                    <td class="text-right">
+                                                        <div class="d-flex">
+                                                            <a type="button" href="action-payment-assignement.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">Assign to Units</a>
+                                                            <div class="dropdown d-none">
+                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </a>
+
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">Mary Onyango</td>
+                                                    <td>
+                                                        <span class="badge badge-soft-success">Bank</span> Co-operative Bank
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Unknown</a></p>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="property-details.html">Unknown</a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap ">
+                                                        01 Feb 2020 9:34 PM
+                                                    </td>
+
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 89,000</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">-</span>
+                                                    </td>
+
+                                                    <td class="text-right">
+                                                        <div class="d-flex">
+                                                            <a type="button" href="action-payment-assignement.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">Assign to Units</a>
+                                                            <div class="dropdown d-none">
+                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </a>
+
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-capitalize text-nowrap">Alex wanyama</td>
+                                                    <td>
+                                                        <span class="badge badge-soft-success">Bank</span> Co-operative Bank
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap">
+                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Unknown</a></p>
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="property-details.html">Unknown</a>
+                                                    </td>
+                                                    <td class="text-capitalize text-nowrap ">
+                                                        17 May2020 9:25 PM
+                                                    </td>
+
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 29,000</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">-</span>
+                                                    </td>
+
+                                                    <td class="text-right">
+                                                        <div class="d-flex">
+                                                            <a type="button" href="action-payment-assignement.html" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3">Assign to Units</a>
+                                                            <div class="dropdown d-none">
+                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                                                </a>
+
+                                                                <div class="dropdown-menu dropdown-menu-end ">
+                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".invoice-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
+                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+
 
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
-
-                                                    <th class="text-capitalize text-nowrap" colspan="2">23 receipts</th>
-
-
-                                                    <td class="text-nowrap text-right " colspan="5">
-                                                        <span class="fw-semibold ">TOTAL: KES 25,500</span>
+                                                    <th class="text-capitalize text-nowrap" colspan="3">22 Transactions</th>
+                                                    <td class="text-nowrap text-right " colspan="3">
+                                                        <span class="fw-semibold ">KES 25,500</span>
                                                     </td>
-
+                                                    <td class="text-nowrap text-right " colspan="">
+                                                        <span class="fw-semibold ">KES 25,500</span>
+                                                    </td>
                                                     <td>
 
                                                     </td>
                                                 </tr>
+
                                             </tfoot>
                                         </table>
                                     </div>
@@ -673,94 +940,90 @@
             <!-- End Page-content -->
 
             <!-- receipting modal -->
-            <div class="modal fade receipting-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal fade receipting-modal pb-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered mb-5">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Receipt Details</h5>
+                            <h5 class="modal-title" id="myLargeModalLabel">Balances Breakdown</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                <div class="col-6">
-                                    <address>
-                                        <strong class="text-capitalize">Received from:</strong><br>
-                                        Kelvin Njuguna<br>
-                                        email@mail.com, 0704 549 859<br>                                   
-                                        ID No. 423-410. 
-                                        
-                                    </address>
-                                </div>
-                                <div class="col-sm-6 text-sm-end">
-                                    <address class="mt-2 mt-sm-0">
-                                        <strong>Payment Method</strong><br>
-                                        <span class="fw-medium">MPESA</span><br>
-                                        Phone No. 0704 549 859<br> <br>
-                                        On 1 Mar 2022, 10:20 AM
-                                    </address>
-                                </div>
+                            <div class="col-12">
+                                <address>
+                                    <strong>Payed By:</strong><br>
+                                    Kelvin Njuguna<br>
+                                    email@mail.com, 0704 549 859<br>                                   
+                                    Hse No. 410, 90 Degrees By Tsavo
+                                    <br><br>
+                                    1 Mar 2022, 10:20 AM
+                                </address>
                             </div>
                             <div class="col-12">
                                 <div class="py-2 mt-3">
-                                    <h3 class="font-size-15 fw-bold">ND12368</h3>
+                                    <h3 class="font-size-15 fw-bold">Distribute KES 25,500 </h3>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="table-responsive">
-                                    <table class="table table-nowrap vertical-align-middle">
-                                        <thead class="bg-light">
+                                    <table class="table table-nowrap">
+                                        <thead>
                                             <tr>
                                                 <th style="width: 70px;">No.</th>
-                                                <th>Offense</th>
+                                                <th>Item</th>
                                                 <th class="text-end">Amount</th>
-                                                
+                                                <th class="" style="width: 150px;">Assign Amount</th>
                                             </tr>
                                         </thead>
-                                        <tfoot class="bg-light">
+                                        <tbody>
                                             <tr>
-                                                <td colspan="2" class="border-0 text-end text-right">
-                                                    <strong>Total</strong>
+                                                <td>01</td>
+                                                <td>Rent Deposit</td>
+                                                <td class="text-end">KES 24,500</td>
+                                                <td>
+                                                    <input type="number" class="form-control form-control-sm text-right" placeholder="KES">
                                                 </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>02</td>
+                                                <td>Monthly Rent</td>
+                                                <td class="text-end">KES 12,000</td>
+                                                <td>
+                                                    <input type="number" class="form-control form-control-sm text-right" placeholder="KES">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>03</td>
+                                                <td>TAX (18%)</td>
+                                                <td class="text-end">KES 250</td>
+                                                <td>
+                                                    <input type="number" class="form-control form-control-sm text-right" placeholder="KES">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-end">Total</td>
+                                                <td class="text-end fw-bold">KES 36,750</td>
+                                                <td class="text-end fw-bold">KES 25,500</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td colspan="2" class="border-0 text-end">
+                                                    <strong>Balance</strong></td>
                                                 <td class="border-0 text-end">
                                                     <h5 class="m-0 text-uppercase fw-bold">KES 11,250</h5>
                                                 </td>
-                                                
                                             </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                <td>01</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Driving Without identification plates affixed or plates not fixed in the prescribed manner</p>
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
-                                            </tr>
-
-                                            <tr title="Drving a vehicle without a valid inspection certificate inspected">
-                                                <td>02</td>
-                                                <td>
-                                                    <p class="the-bill-item mb-0 p-0 m-0">Drving a vehicle without a valid inspection certificate inspected</p>
-
-                                                </td>
-                                                <td class="text-end">KES 24,500</td>
-                                                
-                                            </tr>
-
-
-
-                                            
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                           
-                            <a href="PrintDocs/Receipts/receipts.html" type="button" target="_blank" class="btn btn-primary waves-effect waves-light">
-                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print receipt
-                            </a>
+                            <button class="btn btn-primary" disabled>Receipt Payment</button>
                         </div>
+
                     </div>
                     <!-- /.modal-content -->
                 </div>
@@ -770,7 +1033,7 @@
 
             <!-- invoice details -->
             <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="myLargeModalLabel">Receipt Invoice</h5>
@@ -779,10 +1042,10 @@
                         <div class="modal-body">
                             <div class="col-12">
                                 <address>
-                                    <strong>receipt For:</strong><br>
+                                    <strong>Billed To:</strong><br>
                                     Kelvin Njuguna<br>
                                     email@mail.com, 0704 549 859<br>                                   
-                                    Member No. 410-123
+                                    Hse No. 410, 90 Degrees By Tsavo
                                     <br><br>
                                     1 Mar 2022, 10:20 AM
                                 </address>
@@ -899,11 +1162,11 @@
                         <div class="col-sm-6 ">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © Best Birdy
+                            </script> © RevenueSure
                         </div>
                         <div class="col-sm-6 ">
                             <div class="text-sm-end d-sm-block ">
-                                NTSA Billing System
+                                Developed by Nouveta LTD.
                             </div>
                         </div>
                     </div>
@@ -962,7 +1225,5 @@
 
 
 <!-- index.html   13:55:49 GMT -->
-
-</html>dex.html 13:55:49 GMT -->
 
 </html>
