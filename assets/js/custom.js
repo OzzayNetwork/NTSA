@@ -24,6 +24,7 @@ $(window).on('load', function() {
 
     $('body').on('click', '.minimize', function() {
         $(this).parent().parent().parent().parent().siblings().toggleClass('d-none');
+        $('.email-overlay').toggleClass('p-relative')
     });
     $("body").on('change', '.contacts-table tbody input', function() {
         var theTable = $(this).parent().parent().parent().parent().parent();
