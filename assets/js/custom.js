@@ -588,7 +588,20 @@ $(window).on('load', function() {
 
       
     });
-
+    $('.select-revenue').on('changed.bs.select', function(e, clickedIndex, newValue, oldValue,value){
+        //alert(this.value);
+        if(this.value==="Rent"){
+            $('.Rent-rev').removeClass("d-none").siblings().addClass('d-none')
+        }
+        if(this.value==="Others"){
+            
+            $('.rev-options-cont').children('.row').each(function(index) {
+                $(this).addClass('d-none')
+            });
+        }
+        
+        
+    } )
 
 
 

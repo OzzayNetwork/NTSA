@@ -812,60 +812,81 @@
                                                     <h4 class="card-title mb-4">Enter the invoice details beow</h4>
 
                                                     <form>
-                                                        <div class="row">
-                                                            <div class="col-4 mb-4 d-none">
-                                                                <div class="d-flex">
-                                                                    <div class="flex-shrink-0 me-3 align-self-center">
-                                                                        <i class="mdi mdi-card-account-details-outline  h2 text-dark"></i>
-                                                                    </div>
-                                                                    <div class="flex-grow-1">
-                                                                        <p class="text-muted mb-0">ID No.</p>
-                                                                        <h5 class="mb-0 font-14px">12345678</span></h5>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-8 mb-4">
-                                                                <div class="d-flex">
-                                                                    <div class="flex-shrink-0 me-3 align-self-center">
-                                                                        <i class="mdi mdi-account  h2 text-dark"></i>
-                                                                    </div>
-                                                                    <div class="flex-grow-1">
-                                                                        <p class="text-muted mb-0">Offender's Full Name</p>
-                                                                        <h5 class="mb-0 font-14px">Kelvin Njuguna Ndungu</span></h5>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-4 mb-4">
-                                                                <div class="d-flex">
-                                                                    <div class="flex-shrink-0 me-3 align-self-center">
-                                                                        <i class="mdi mdi-phone  h2 text-dark"></i>
-                                                                    </div>
-                                                                    <div class="flex-grow-1">
-                                                                        <p class="text-muted mb-0">Phone No.</p>
-                                                                        <h5 class="mb-0 font-14px text-uppercase">0704549859</span></h5>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-8 mb-4">
-                                                                <div class="d-flex">
-                                                                    <div class="flex-shrink-0 me-3 align-self-center">
-                                                                        <i class="mdi mdi-email-outline  h2 text-dark"></i>
-                                                                    </div>
-                                                                    <div class="flex-grow-1">
-                                                                        <p class="text-muted mb-0">Email Address</p>
-                                                                        <h5 class="mb-0 font-14px">Kelvinnjuguna99@gmail.com</span></h5>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <hr/>
-                                                            </div>
-                                                        </div>
-
-
                                                         <div class="row tenant-invoice-container invoice-options">
+
+                                                            <div class="col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="formrow-firstname-input" class="form-label">Revenue Stream</label>
+                                                                    <select class="form-control selectpicker bg-white select-revenue" title="Select Revenue Stream" data-live-search="true" title="Select a tenant">
+                                                                        <option value="Others">Parking</option>
+                                                                        <option value="Others">Trade</option>
+                                                                        <option value="Rent">Rent</option>
+                                                                        <option value="Others">Health</option>
+                                                                        <option value="Others">Planning</option>
+                                                                        <option value="Others">Land Rate</option>
+
+                                                                        <option value="Others">Liquor</option>
+                                                                        <option value="Others">Advert</option>
+                                                                        <option value="Others" selected>Others</option>
+                                                                  </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-12 rev-options-cont">
+                                                                <div class="row Rent-rev d-none">
+                                                                    <div class="col-12">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-email-input" class="form-label">Estate</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select Estate" data-live-search="true" title="Select a tenant">
+                                                                                <option value="Parking">Parking</option>
+                                                                                <option value="SBP">Trade</option>
+                                                                                <option value="Rent">Rent</option>
+                                                                                <option value="Health">Health</option>
+                                                                                <option value="Planning">Planning</option>
+                                                                                <option value="LandRate">Land Rate</option>
+        
+                                                                                <option value="Liquor">Liquor</option>
+                                                                                <option value="Advert">Advert</option>
+                                                                          </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-email-input" class="form-label">House Type</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select House Type" data-live-search="true" title="Select a tenant">
+                                                                                <option value="Parking">Parking</option>
+                                                                                <option value="SBP">Trade</option>
+                                                                                <option value="Rent">Rent</option>
+                                                                                <option value="Health">Health</option>
+                                                                                <option value="Planning">Planning</option>
+                                                                                <option value="LandRate">Land Rate</option>
+        
+                                                                                <option value="Liquor">Liquor</option>
+                                                                                <option value="Advert">Advert</option>
+                                                                          </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="formrow-email-input" class="form-label">House Number</label>
+                                                                            <select class="form-control selectpicker bg-white" title="Select House Number" data-live-search="true" title="Select a tenant">
+                                                                                <option value="Parking">Parking</option>
+                                                                                <option value="SBP">Trade</option>
+                                                                                <option value="Rent">Rent</option>
+                                                                                <option value="Health">Health</option>
+                                                                                <option value="Planning">Planning</option>
+                                                                                <option value="LandRate">Land Rate</option>
+        
+                                                                                <option value="Liquor">Liquor</option>
+                                                                                <option value="Advert">Advert</option>
+                                                                          </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
 
                                                             <div class="col-6">
                                                                 <div class="mb-3">
@@ -945,8 +966,69 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-12 col-md-8 col-lg-7">
+                                            
                                             <div class="d-flex justify-items-center align-items-center ">
                                                 <div class="card-body border-1 invoice-table p-4">
+
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="bg-light p-3 mb-4 d-flex justify-content-between align-items-center">
+                                                                <h4 class="card-title mb-0">Client Details</h4>
+                                                                <button class="btn btn-secondary btn-sm"  data-toggle="modal" data-target="#subscribeModal">Select A diffrent Client</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 mb-4 d-none">
+                                                            <div class="d-flex">
+                                                                <div class="flex-shrink-0 me-3 align-self-center">
+                                                                    <i class="mdi mdi-card-account-details-outline  h2 text-dark"></i>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <p class="text-muted mb-0">ID No.</p>
+                                                                    <h5 class="mb-0 font-14px">12345678</span></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-8 mb-4">
+                                                            <div class="d-flex">
+                                                                <div class="flex-shrink-0 me-3 align-self-center">
+                                                                    <i class="mdi mdi-account  h2 text-dark"></i>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <p class="text-muted mb-0">Offender's Full Name</p>
+                                                                    <h5 class="mb-0 font-14px">Kelvin Njuguna Ndungu</span></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-4 mb-4">
+                                                            <div class="d-flex">
+                                                                <div class="flex-shrink-0 me-3 align-self-center">
+                                                                    <i class="mdi mdi-phone  h2 text-dark"></i>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <p class="text-muted mb-0">Phone No.</p>
+                                                                    <h5 class="mb-0 font-14px text-uppercase">0704549859</span></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-8 mb-4">
+                                                            <div class="d-flex">
+                                                                <div class="flex-shrink-0 me-3 align-self-center">
+                                                                    <i class="mdi mdi-email-outline  h2 text-dark"></i>
+                                                                </div>
+                                                                <div class="flex-grow-1">
+                                                                    <p class="text-muted mb-0">Email Address</p>
+                                                                    <h5 class="mb-0 font-14px">Kelvinnjuguna99@gmail.com</span></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <hr/>
+                                                        </div>
+                                                    </div>
+
+
                                                     <h4 class="card-title mb-4">Created Bill Details</h4>
                                                     <div class="row">
                                                         <div class="col-12">
