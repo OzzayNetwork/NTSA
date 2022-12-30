@@ -588,20 +588,87 @@ $(window).on('load', function() {
 
       
     });
+
     $('.select-revenue').on('changed.bs.select', function(e, clickedIndex, newValue, oldValue,value){
         //alert(this.value);
         if(this.value==="Rent"){
             $('.Rent-rev').removeClass("d-none").siblings().addClass('d-none')
         }
+        if(this.value==="Parking"){
+            $('.parking-rev').removeClass("d-none").siblings().addClass('d-none')
+        }
         if(this.value==="Others"){
+
+            $('.others-rev').removeClass("d-none").siblings().addClass('d-none')
             
-            $('.rev-options-cont').children('.row').each(function(index) {
-                $(this).addClass('d-none')
-            });
+            // $('.rev-options-cont').children('.row').each(function(index) {
+            //     $(this).addClass('d-none')
+            // });
         }
         
         
     } )
+
+    // parking options
+    $('.parking-category').on('change', function(){
+        //alert(this.value);
+        if(this.value==="seasonal"){
+            $('.seasonal-duration').removeClass("d-none").siblings().addClass('d-none')
+        }
+
+        if(this.value!="seasonal"){
+            $('.seasonal-duration').addClass("d-none")
+        }
+
+        if(this.value==="Offstreet"){
+            $('.offstreet-duration').removeClass("d-none").siblings().addClass('d-none')
+        }
+
+        if(this.value!="Offstreet"){
+            $('.offstreet-duration').addClass("d-none")
+        }
+        
+    } )
+
+    //hygiene options
+    $('.hyginene-selector').on('change', function(){
+        var theSelectedvalue=$(this).val()
+        if(theSelectedvalue=="New Application"){
+            $(".food-hygiene-cont .new-hygiene").removeClass('d-none').siblings().addClass('d-none')
+        }
+
+        if(theSelectedvalue=="Renewal"){
+            $(".food-hygiene-cont .renew-hygene").removeClass('d-none').siblings().addClass('d-none')
+        }
+    })
+
+    // handler selector
+    $('.handler-selector').on('change', function(){
+        var theSelectedvalue=$(this).val()
+        //alert(theSelectedvalue)
+        if(theSelectedvalue=="New Application"){
+            $(".food-handler-cont .new-Handler").removeClass('d-none').siblings().addClass('d-none')
+        }
+
+        if(theSelectedvalue=="Renewal"){
+            $(".food-handler-cont .renew-Handler").removeClass('d-none').siblings().addClass('d-none')
+        }
+    })
+
+    //health selector
+    $('.health-selector').on('change', function(){
+        var theSelectedvalue=$(this).val()
+        if(theSelectedvalue=="Food Hygien"){
+            $(".hyginene-selector").removeClass('d-none').siblings('select').addClass('d-none')
+            $('.health-options .food-hygiene-cont').removeClass('d-none').siblings().addClass("d-none")
+        }
+
+        if(theSelectedvalue=="Food Handler"){
+            $(".handler-selector").removeClass('d-none').siblings('select').addClass('d-none')
+            $('.health-options .food-handler-cont').removeClass('d-none').siblings().addClass("d-none")
+        }
+    })
+
 
 
 
