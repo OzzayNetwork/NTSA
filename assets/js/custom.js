@@ -597,6 +597,15 @@ $(window).on('load', function() {
         if(this.value==="Parking"){
             $('.parking-rev').removeClass("d-none").siblings().addClass('d-none')
         }
+
+        if(this.value==="Health"){
+            $('.health-rev').removeClass("d-none").siblings().addClass('d-none')
+        }
+
+        if(this.value==="Trade"){
+            $('.trade-rev').removeClass("d-none").siblings().addClass('d-none')
+        }
+
         if(this.value==="Others"){
 
             $('.others-rev').removeClass("d-none").siblings().addClass('d-none')
