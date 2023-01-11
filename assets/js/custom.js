@@ -606,6 +606,14 @@ $(window).on('load', function() {
             $('.trade-rev').removeClass("d-none").siblings().addClass('d-none')
         }
 
+        if(this.value==="Liquor"){
+            $('.liquor-rev').removeClass("d-none").siblings().addClass('d-none')
+        }
+
+        if(this.value==="Landrates"){
+            $('.landrate-rev').removeClass("d-none").siblings().addClass('d-none')
+        }
+
         if(this.value==="Others"){
 
             $('.others-rev').removeClass("d-none").siblings().addClass('d-none')
@@ -675,6 +683,18 @@ $(window).on('load', function() {
         if(theSelectedvalue=="Food Handler"){
             $(".handler-selector").removeClass('d-none').siblings('select').addClass('d-none')
             $('.health-options .food-handler-cont').removeClass('d-none').siblings().addClass("d-none")
+        }
+    })
+
+    //liquor changes
+    $('.liquor-selector').on('change', function(){
+        var theSelectedVal=$(this).val()
+        if(theSelectedVal==="New Application"){
+            $('.liqur-options .new-application').removeClass('d-none').siblings().addClass('d-none')
+        }
+
+        if(theSelectedVal==="License Renewal"){
+            $('.liqur-options .renew-liquor').removeClass('d-none').siblings().addClass('d-none')
         }
     })
 
@@ -754,6 +774,46 @@ $(document).ready(function() {
 
     })
 
+    $('body').on('click', '.btn-next', function(){
+        $(this).siblings('.btn-prev').prop('disabled', false)
+        
+        var theStepsCont=$(this).parent().parent().siblings('.steps-container')
+        var numberOfChildren=theStepsCont.children().length
+        var activeStedIndex=theStepsCont.children('.the-step.active').index()
+        var activeStep=theStepsCont.children('.the-step.active')
+        var nextStep=theStepsCont.children('.the-step.active').index()+1
+        if(nextStep!=numberOfChildren){
+            activeStep.addClass('d-none').removeClass('active').next().removeClass('d-none').addClass('active')
+        }
+
+        if(nextStep===numberOfChildren-1){
+            $(this).prop('disabled', true).addClass('d-none')
+            $(this).siblings('.btn-submit').removeClass('d-none')
+        }
+
+    })
+
+    $('body').on('click', '.btn-prev', function(){
+
+        $(this).siblings('.btn-next').prop('disabled', false).removeClass('d-none')
+        $(this).siblings('.btn-submit').prop('disabled', false).addClass('d-none')
+        
+        var theStepsCont=$(this).parent().parent().siblings('.steps-container')
+        var numberOfChildren=theStepsCont.children().length
+        var activeStedIndex=theStepsCont.children('.the-step.active').index()
+        var activeStep=theStepsCont.children('.the-step.active')
+        var nextStep=theStepsCont.children('.the-step.active').index()-1
+        if(nextStep>-1){
+            activeStep.addClass('d-none').removeClass('active').prev().removeClass('d-none').addClass('active')
+        }
+
+        if(nextStep<1){
+            $(this).prop('disabled', true)
+           
+        }
+
+    })
+
     $('body').on('click','.payment-prev', function(){
         $('.payment-next').removeClass('d-none');  
         var countTheSteps = parseFloat($(".payment-panel-parent .payment-panel").length);
@@ -762,7 +822,6 @@ $(document).ready(function() {
             $('.payment-panel-parent').find('.payment-active-panel').addClass('d-none').removeClass('payment-active-panel').prev().removeClass('d-none').addClass('payment-active-panel')
         }   
         
-
     });
 
 
